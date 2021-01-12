@@ -22,6 +22,24 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 50px 40px 0 40px;
+            grid-template-columns: repeat(2,415px);
+            column-gap: 50px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template: repeat(3,minmax(270px,auto))/repeat(3,270px);
+            justify-content: center;
+        }
+        &__loading {
+            margin-top: 100px;
+            grid-template: repeat(3,minmax(70px,auto))/repeat(2,350px);
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -44,6 +62,24 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 455px;
+            justify-content: center;
+            row-gap: 40px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            margin-top: 40px;
+            grid-template: repeat(3,minmax(270px,auto))/repeat(3,minmax(230px,auto));
+            padding: 0;
+        }
+        &__loading {
+            margin-top: 60px;
+            grid-template: repeat(3,minmax(70px,auto))/repeat(2,335px);
         }
     }
 }
@@ -77,6 +113,29 @@
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
             }
+        }
+    }
+    .title {
+        &__section {
+            &-subtitle {
+                font-size: 30px;
+                margin-top: 0;
+            }
+        }
+    }
+    .resume {
+        padding-top: 60px;
+        &__wrapper {
+            padding: 40px 40px 0 40px;
+        }
+    }
+    .skills {
+        padding-top: 60px;
+        &__wrapper {
+            grid-template: repeat(4,minmax(270px,auto))/repeat(2,minmax(230px,auto));
+        }
+        &__loading {
+            grid-template: repeat(6,minmax(70px,auto))/repeat(1,335px);
         }
     }
 }
@@ -115,6 +174,36 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .title {
+        &_fz36 {
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 26px;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 40px 0 0;
+            grid-template-columns: 300px;
+            row-gap: 10px;
+        }
+    }
+    .divider {
+        margin-top: 15px;
+    }
+    .skills {
+        &__wrapper {
+            margin-top: 20px;
+            grid-template: repeat(7,minmax(270px,auto))/repeat(1,minmax(230px,auto));
+            gap: 20px;
+        }
+        &__loading {
+            margin-top: 40px;
+            grid-template: repeat(6,minmax(70px,auto))/repeat(1,300px);
+            row-gap: 40px;
         }
     }
 }

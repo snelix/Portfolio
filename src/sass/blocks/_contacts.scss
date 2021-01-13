@@ -1,10 +1,10 @@
 .contacts {
     padding: 120px 0 90px;
     &__wrapper {
-        pad: 0 35px 0 52px;
         display: grid;
         grid-template-columns: 400px 585px;
-        justify-content: space-between;
+        gap: 68px;
+        justify-content: center;
     }
     &__photo {
         img {
